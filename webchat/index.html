@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Call Integration</title>
+</head>
+<body>
+  <h1>Welcome to the Call</h1>
+
+  <!-- Daily.co iframe script -->
+  <script crossorigin src="https://unpkg.com/@daily-co/daily-js"></script>
+  <script>
+    const callFrame = window.DailyIframe.createFrame();
+    callFrame.join({ url: 'https://example.daily.co/home' });
+  </script>
+
+</body>
+</html>
